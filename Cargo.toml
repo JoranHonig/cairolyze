@@ -1,0 +1,19 @@
+[package]
+name = "cairo-analytics"
+author="Joran Honig"
+about="Cairo analysis tool"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cairo_parser = { git = "https://github.com/starkware-libs/cairo", package="parser", branch = "main" }
+cairo_db_utils = { git = "https://github.com/starkware-libs/cairo",package="db_utils", branch = "main" }
+cairo_diagnostics = { git = "https://github.com/starkware-libs/cairo", package="diagnostics", branch = "main" }
+cairo_filesystem = { git = "https://github.com/starkware-libs/cairo",package="filesystem", branch = "main" }
+cairo_syntax = { git = "https://github.com/starkware-libs/cairo",package="syntax", branch = "main" }
+cairo_syntax_codegen = { git = "https://github.com/starkware-libs/cairo",package="syntax_codegen", branch = "main" }
+cairo_utils = { git = "https://github.com/starkware-libs/cairo", package="utils", branch = "main" }
+crepe = "0.1.6"
+clap = { version = "4.0.29", features = ["derive"] }
